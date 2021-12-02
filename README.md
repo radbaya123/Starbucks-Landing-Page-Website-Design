@@ -2,7 +2,7 @@
 
 This is an example of <b><i>Starbuck Landing Page.</i></b> <br />
 It's inspired from my UI Design about Landing Page Exploration. <br />
-You can choose and change wich product do you want by simple Click the small thumbnail of of product in bottom.
+You can choose and change wich product do you want by simple Click the small thumbnail of other product in the bottom.
 
 Hope you like it 🤟
 Feel free to comment!!!
