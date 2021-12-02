@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Starbuck Landing Page</title>
+  </head>
+  <body>
+    <section>
+			<div class="circle"></div>
+      <header>
+        <a href="#" class="logo"><img src="assets/img/logo.png" alt="logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>
+            It's not just a Coffee<br />
+            It's <span>Starbucks</span>
+          </h2>
+          <p>
+            More than just great coffee. 
+						Starbucks uses the highest quality Arabica Coffee as the base for its beloved drinks. Learn about our unique coffee makers and cold brew coffee today.
+          </p>
+          <a href="https://www.starbucks.co.id/" target="/blank">Learn More</a>
+        </div>
+        <div class="imgBox">
+          <img src="assets/img/img1.png" alt="green tea" class="starbucks" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="assets/img/thumb1.png" onclick="imgSlider('assets/img/img1.png');changeCircleColor('#017143')" alt="thumb1" /></li>
+        <li><img src="assets/img/thumb2.png" onclick="imgSlider('assets/img/img2.png');changeCircleColor('#eb7495')" alt="thumb2" /></li>
+        <li><img src="assets/img/thumb3.png" onclick="imgSlider('assets/img/img3.png');changeCircleColor('#d752b1')" alt="thumb3" /></li>
+      </ul>
+			<ul class="sci">
+				<li><a href="#"><img src="assets/img/facebook.png" alt="facebook"></a></li>
+				<li><a href="#"><img src="assets/img/instagram.png" alt="instagram"></a></li>
+				<li><a href="#"><img src="assets/img/twitter.png" alt="twitter"></a></li>
+			</ul>
+    </section>
+		<script type="text/javascript">
+			function imgSlider(anything ){
+				document.querySelector('.starbucks').src = anything;
+			}
+
+			function changeCircleColor(color){
+				const circle = document.querySelector('.circle');
+				circle.style.background = color;
+			}
+		</script>
+  </body>
+</html>
