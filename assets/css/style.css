@@ -115,6 +115,7 @@ header ul li a:hover {
 }
 .thumb li:hover {
   transform: translateY(-16px);
+  
 }
 .thumb li img {
   max-width: 60px;
@@ -146,4 +147,28 @@ header ul li a:hover {
   height: 100%;
   background: #017143;
   clip-path: circle(600px at right 800px);
+}
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #017143;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+}
+.cursor2 {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #017143;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
 }

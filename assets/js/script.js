@@ -1,8 +1,14 @@
-function imgSlider(anything ){
-  document.querySelector('.starbucks').src = anything;
+function imgSlider(anything) {
+  document.querySelector(".starbucks").src = anything;
 }
 
-function changeCircleColor(color){
-  const circle = document.querySelector('.circle');
+function changeCircleColor(color) {
+  const circle = document.querySelector(".circle");
   circle.style.background = color;
 }
+
+var cursor = document.querySelector(".cursor");
+var cursor2 = document.querySelector(".cursor2");
+document.addEventListener("mousemove", function (e) {
+  cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+});
